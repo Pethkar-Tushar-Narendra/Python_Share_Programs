@@ -47,5 +47,5 @@ while 1:
     data_1_min = pd.DataFrame(ocdata)
     worksheet_1_min.update(data_1_min.values.tolist())
     print(3)
-    time.sleep(20)
+    time.sleep(200)
     
