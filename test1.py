@@ -20,10 +20,10 @@ def datetotimestamp(date):
 def timestamptodate(timestamp):
     return datetime.fromtimestamp(timestamp)
 
-worksheet_1_min = sh.worksheet('5_min')
+worksheet_1_min = sh.worksheet('15_min')
 
 while 1:
-    end = datetotimestamp(datetime.now())
+    end = datetotimestamp(datetime.today())
     if worksheet_1_min.acell('Q2').value == 'SHARE':
         year= worksheet_1_min.acell('M2').value
         month= worksheet_1_min.acell('N2').value

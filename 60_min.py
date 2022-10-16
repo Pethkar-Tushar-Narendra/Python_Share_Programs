@@ -23,14 +23,18 @@ def timestamptodate(timestamp):
 worksheet_1_min = sh.worksheet('60_min')
 
 while 1:
-    end = datetotimestamp(datetime.today())
+    end = datetotimestamp(datetime.now())
     if worksheet_1_min.acell('Q2').value == 'SHARE':
         year= worksheet_1_min.acell('M2').value
         month= worksheet_1_min.acell('N2').value
         day= worksheet_1_min.acell('O2').value
         company= worksheet_1_min.acell('L2').value
         time1= worksheet_1_min.acell('P2').value
-        start_1_min = datetotimestamp(datetime(int(year), int(month), int(day)))
+        hour = datetime.now().strftime('%H')
+        minute = datetime.now().strftime('%M')
+        second = datetime.now().strftime('%S')
+        
+        start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
         url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
             str(start_1_min)+'&to='+str(end)
 
@@ -44,7 +48,11 @@ while 1:
         day= worksheet_1_min.acell('O2').value
         time1= worksheet_1_min.acell('P2').value
         number= worksheet_1_min.acell('R2').value
-        start_1_min = datetotimestamp(datetime(int(year), int(month), int(day)))
+        hour = datetime.now().strftime('%H')
+        minute = datetime.now().strftime('%M')
+        second = datetime.now().strftime('%S')
+        
+        start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
         url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
             str(start_1_min)+'&to='+str(end)
 
