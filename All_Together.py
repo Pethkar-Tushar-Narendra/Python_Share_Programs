@@ -37,7 +37,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution=1&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -57,7 +57,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution=5&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -77,7 +77,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution=15&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -97,7 +97,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution=30&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -116,7 +116,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution=60&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -134,7 +134,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/indianMarket/stock/history?symbol='+(company.upper())+'&resolution=1D&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -154,7 +154,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution=1&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -174,7 +174,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution=5&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -193,7 +193,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution=15&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -212,7 +212,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution=30&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -231,7 +231,7 @@ while 1:
         second = datetime.now().strftime('%S')
         
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution=60&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
@@ -249,13 +249,12 @@ while 1:
         minute = datetime.now().strftime('%M')
         second = datetime.now().strftime('%S')
         start_1_min = datetotimestamp(datetime(int(year), int(month),int(day),int(hour),int(minute),int(second)))
-        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution='+time1+'&from=' + \
+        url_1_min = 'https://priceapi.moneycontrol.com/techCharts/history?symbol='+number+'&resolution=1D&from=' + \
             str(start_1_min)+'&to='+str(end)
 
         resp_1_min = requests.get(url_1_min).json()
         data_1_min = pd.DataFrame(resp_1_min)
 
         worksheet_1_min.update([data_1_min.columns.values.tolist()]+data_1_min.values.tolist())
-
 
     time.sleep(10)
