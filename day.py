@@ -20,7 +20,7 @@ def datetotimestamp(date):
 def timestamptodate(timestamp):
     return datetime.fromtimestamp(timestamp)
 
-worksheet_1_min = sh.worksheet('1_min')
+worksheet_1_min = sh.worksheet('DAY')
 
 while 1:
     end = datetotimestamp(datetime.today())
